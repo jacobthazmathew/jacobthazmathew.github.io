@@ -7,11 +7,11 @@ const experiences = [
     company: "Synergy HR Consulting LLC",
     description:
       "Strategic consulting for digital health initiatives in Qatar, focusing on telemedicine, telehealth, and operations management. Delivering expert presentations and ensuring operational excellence in health technology implementation.",
-    skills: ["Digital Health", "Telemedicine", "Operations Management", "Telehealth", "eHealth"],
+    skills: ["Digital Health", "Development", "Operations Management", "eHealth"],
   },
   {
     period: "Nov 2022 — Nov 2023",
-    role: "Acting CEO / COO / CMO",
+    role: "COO / CMO",
     company: "Droobi Health (Lillia)",
     description:
       "Held multiple executive leadership roles during a critical growth phase. Managed overall operations, clinical strategy, and product development for advanced digital health solutions in Doha, Qatar.",
@@ -19,7 +19,7 @@ const experiences = [
   },
   {
     period: "Jun 2013 — Aug 2021",
-    role: "Emergency Medicine Physician & Assistant Registrar",
+    role: "Emergency Medicine Physician",
     company: "Ministry of Health Kuwait",
     description:
       "Provided high-acuity clinical care at Mubarak Al-Kabeer and Al-Adan Hospitals. Led emergency department operations and integrated digital health practices into clinical workflows.",
