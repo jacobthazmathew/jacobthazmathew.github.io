@@ -2,49 +2,67 @@ import { Card } from "@/components/ui/card"
 
 const experiences = [
   {
-    period: "2023 — Present",
-    role: "Senior Frontend Engineer",
-    company: "Tech Company",
+    period: "Aug 2021 — Present",
+    role: "Digital Health Consultant",
+    company: "Synergy HR Consulting LLC",
     description:
-      "Build and maintain critical components used to construct user-facing products. Work closely with cross-functional teams to implement and advocate for best practices in web accessibility.",
-    technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
+      "Strategic consulting for digital health initiatives in Qatar, focusing on telemedicine, telehealth, and operations management. Delivering expert presentations and ensuring operational excellence in health technology implementation.",
+    skills: ["Digital Health", "Telemedicine", "Operations Management", "Telehealth", "eHealth"],
   },
   {
-    period: "2021 — 2023",
-    role: "Frontend Developer",
-    company: "Digital Agency",
+    period: "Nov 2022 — Nov 2023",
+    role: "Acting CEO / COO / CMO",
+    company: "Droobi Health (Lillia)",
     description:
-      "Developed and shipped highly interactive web applications for clients. Collaborated with designers and backend developers to deliver polished, production-ready experiences.",
-    technologies: ["JavaScript", "Vue.js", "Node.js", "CSS"],
+      "Held multiple executive leadership roles during a critical growth phase. Managed overall operations, clinical strategy, and product development for advanced digital health solutions in Doha, Qatar.",
+    skills: ["Leadership", "Product Development", "Startups", "Project Management", "Digital Health"],
   },
   {
-    period: "2019 — 2021",
-    role: "Junior Developer",
-    company: "Startup Inc",
+    period: "Jun 2013 — Aug 2021",
+    role: "Emergency Medicine Physician & Assistant Registrar",
+    company: "Ministry of Health Kuwait",
     description:
-      "Started my career building features for a fast-growing startup. Learned modern development practices and contributed to multiple product launches.",
-    technologies: ["React", "Redux", "Express", "MongoDB"],
+      "Provided high-acuity clinical care at Mubarak Al-Kabeer and Al-Adan Hospitals. Led emergency department operations and integrated digital health practices into clinical workflows.",
+    skills: ["Clinical Care", "Emergency Medicine", "Digital Health", "Leadership", "eHealth"],
+  },
+  {
+    period: "Nov 2012 — Jan 2013",
+    role: "Research Assistant",
+    company: "Global Emergency Care Collaborative",
+    description:
+      "Provided research support to an NGO developing emergency care infrastructures in rural Rukungiri, Uganda.",
+    skills: ["Research", "Emergency Care", "Global Health", "Teamwork"],
   },
 ]
 
 const affiliations = [
   {
-    organization: "World Medical Association",
-    role: "Member & Policy Contributor",
+    organization: "World Medical Association (WMA)",
+    role: "Working Group & Taskforce Member",
     description:
-      "Contributing to international medical policy discussions and guidelines for AI implementation in healthcare. Focus on ethical standards and clinical safety.",
+      "Member of the Medical Technologies Working Group with a focus on AI's impact on healthcare. Previously served on the Protection of Medical Personnel and eHealth Taskforces.",
+    period: "2020 — Present",
   },
   {
-    organization: "University of Pittsburgh",
-    role: "Academic Affiliate",
+    organization: "American Heart Association",
+    role: "BLS & ACLS Instructor",
     description:
-      "Research collaboration on healthcare AI, digital health innovation, and medical education initiatives for emerging technologies.",
+      "Certified instructor for Basic Life Support and Advanced Cardiac Life Support, training hundreds of healthcare professionals in critical life-saving techniques.",
+    period: "2012 — 2021",
   },
   {
-    organization: "Synergy Consulting",
-    role: "Founder & Principal Consultant",
+    organization: "Junior Doctor Network",
+    role: "Active Member",
     description:
-      "Digital health consulting practice advising health tech startups, healthcare organizations, and innovation teams on clinical validity, AI safety, and strategic implementation.",
+      "Contributing to international discussions and advocacy for junior doctors globaly, focusing on leadership and medical education.",
+    period: "2016 — 2021",
+  },
+  {
+    organization: "IFMSA",
+    role: "National & Local Officer of Medical Education",
+    description:
+      "Led medical education initiatives at Kuwait University, coordinating national programs and local student engagement.",
+    period: "2008 — 2010",
   },
 ]
 
@@ -67,9 +85,9 @@ export function Experience() {
                   </div>
                   <p className="text-foreground/80 leading-relaxed">{exp.description}</p>
                   <div className="flex flex-wrap gap-2">
-                    {exp.technologies.map((tech) => (
-                      <span key={tech} className="px-3 py-1 text-xs bg-accent/10 text-accent rounded-full">
-                        {tech}
+                    {exp.skills.map((skill) => (
+                      <span key={skill} className="px-3 py-1 text-xs bg-accent/10 text-accent rounded-full">
+                        {skill}
                       </span>
                     ))}
                   </div>
@@ -79,12 +97,15 @@ export function Experience() {
           ))}
           {affiliations.map((affiliation, index) => (
             <Card key={index} className="p-6 bg-card border-border hover:shadow-lg transition-shadow">
-              <div className="space-y-3">
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground">{affiliation.organization}</h3>
-                  <p className="text-sm text-accent">{affiliation.role}</p>
+              <div className="flex flex-col md:flex-row md:items-start gap-4">
+                <div className="text-sm text-muted-foreground min-w-[140px]">{affiliation.period}</div>
+                <div className="flex-1 space-y-3">
+                  <div>
+                    <h3 className="text-lg font-semibold text-foreground">{affiliation.organization}</h3>
+                    <p className="text-sm text-accent">{affiliation.role}</p>
+                  </div>
+                  <p className="text-foreground/80 leading-relaxed">{affiliation.description}</p>
                 </div>
-                <p className="text-foreground/80 leading-relaxed">{affiliation.description}</p>
               </div>
             </Card>
           ))}
