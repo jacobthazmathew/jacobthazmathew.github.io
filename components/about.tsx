@@ -16,8 +16,7 @@ export function About() {
             experience and informed by active involvement in research, policy work, and product development.
           </p>
           <p>
-            A significant part of my work involves evaluating and designing AI systems used in healthcare settings,
-            including clinical decision support, documentation tools, and patient-facing applications. I focus on
+            A significant part of my work involves evaluating and designing digital tools used in healthcare settings. I focus on
             ensuring these systems are clinically meaningful, explainable, safe, and aligned with real-world practice
             rather than theoretical workflows.
           </p>
