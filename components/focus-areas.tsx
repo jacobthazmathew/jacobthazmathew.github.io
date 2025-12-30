@@ -15,7 +15,7 @@ const focusAreas = [
 
 export function FocusAreas() {
   return (
-    <section id="focus" className="py-24 px-6">
+    <section id="focus-areas" className="py-24 px-6">
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-sm uppercase tracking-wider text-muted-foreground mb-12">Focus Areas</h2>
         <div className="grid md:grid-cols-3 gap-8">
