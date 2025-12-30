@@ -4,8 +4,6 @@ import { About } from "@/components/about"
 import { CurrentWork } from "@/components/current-work"
 import { FocusAreas } from "@/components/focus-areas"
 import { Experience } from "@/components/experience"
-import { Projects } from "@/components/projects"
-import { Writing } from "@/components/writing"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 
