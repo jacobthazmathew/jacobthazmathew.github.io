@@ -43,12 +43,6 @@ export function Navigation() {
             <a href="#experience" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Experience
             </a>
-            <a href="#projects" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Projects
-            </a>
-            <a href="#writing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Writing
-            </a>
             <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Contact
             </a>
