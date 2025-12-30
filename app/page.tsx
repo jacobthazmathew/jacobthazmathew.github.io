@@ -19,8 +19,6 @@ export default function Home() {
         <CurrentWork />
         <FocusAreas />
         <Experience />
-        <Projects />
-        <Writing />
         <Contact />
       </main>
       <Footer />
